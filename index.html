@@ -7,7 +7,7 @@
 <meta name="description" content="Typhaine Leleu, thérapeute animalier à Avignon (Montfavet) : ostéopathie animale, soins énergétiques et communication animale pour chiens, chats, chevaux et NAC. Sur rendez-vous, à domicile ou au cabinet.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,16 +15,22 @@
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="#" class="logo">🐾 Ostéo'Nergie <span>Animale</span></a>
+    <a href="#" class="logo">
+      <span class="logo-icon">🐾</span>
+      <span class="logo-text">Ostéo'Nergie <em>Animale</em></span>
+    </a>
     <nav class="nav-links" id="navLinks">
       <a href="#approche">Approche</a>
       <a href="#soins">Soins</a>
+      <a href="#galerie">Galerie</a>
       <a href="#tarifs">Tarifs</a>
       <a href="#avis">Avis</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-cta">
-      <a href="tel:+33605240998" class="btn btn-primary btn-sm">📞 06 05 24 09 98</a>
+      <a href="tel:+33605240998" class="btn btn-primary btn-sm">
+        <span class="btn-icon">📞</span> 06 05 24 09 98
+      </a>
       <button class="burger" id="burger" aria-label="Menu">☰</button>
     </div>
   </div>
@@ -32,27 +38,38 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
+  <div class="hero-bg">
+    <img src="photos/opt/DSC_0328-scaled.webp" alt="Typhaine Leleu en séance d'ostéopathie animale" class="hero-bg-img">
+    <div class="hero-overlay"></div>
+  </div>
   <div class="container hero-inner">
-    <div class="hero-text">
+    <div class="hero-content">
       <div class="badge">📍 Avignon — Montfavet · À domicile & au cabinet</div>
-      <h1>Le bien-être de votre animal, entre <em>mains expertes</em>.</h1>
+      <h1>Le bien-être de votre animal,<br><em>entre mains expertes</em>.</h1>
       <p class="lead">Ostéopathie animale, soins énergétiques et communication animale : une prise en charge complète — physique, émotionnelle et psychique — pour vos compagnons, petits et grands.</p>
       <div class="hero-actions">
-        <a href="tel:+33605240998" class="btn btn-primary">Prendre rendez-vous</a>
-        <a href="#soins" class="btn btn-ghost">Découvrir les soins →</a>
+        <a href="tel:+33605240998" class="btn btn-primary btn-lg">Prendre rendez-vous</a>
+        <a href="#soins" class="btn btn-glass btn-lg">Découvrir les soins →</a>
       </div>
       <div class="hero-proof">
-        <div class="proof-item"><strong>5,0/5</strong><span>★ Avis clients</span></div>
-        <div class="proof-item"><strong>3</strong><span>Disciplines combinées</span></div>
-        <div class="proof-item"><strong>100%</strong><span>Approche douce & adaptée</span></div>
+        <div class="proof-item">
+          <strong>5,0/5</strong>
+          <span>★ Avis clients</span>
+        </div>
+        <div class="proof-item">
+          <strong>3</strong>
+          <span>Disciplines combinées</span>
+        </div>
+        <div class="proof-item">
+          <strong>100%</strong>
+          <span>Approche douce & adaptée</span>
+        </div>
       </div>
     </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="hero-circle">🐕</div>
-      <div class="float-chip chip-1">🐈 Chats</div>
-      <div class="float-chip chip-2">🐴 Chevaux</div>
-      <div class="float-chip chip-3">🐇 NAC</div>
-    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Découvrir</span>
+    <div class="scroll-line"></div>
   </div>
 </section>
 
@@ -61,32 +78,49 @@
   <div class="container">
     <div class="section-head">
       <span class="kicker">Mon approche</span>
-      <h2>Passionnée par les animaux, <em>depuis toujours</em>.</h2>
+      <h2>Passionnée par les animaux,<br><em>depuis toujours</em>.</h2>
       <p>La notion de bien-être est primordiale dans mon travail. La mise en confiance de l'animal est essentielle : durant chaque séance, je m'adapte à son tempérament et j'utilise divers outils pour lui apporter les meilleurs soins.</p>
     </div>
 
-    <div class="pillars">
-      <div class="pillar-card">
-        <div class="pillar-icon">🦴</div>
-        <h3>Ostéopathie animale</h3>
-        <p>Techniques manuelles et mobilisations douces pour traiter les troubles musculo-squelettiques, améliorer la mobilité et prévenir les blessures.</p>
-        <span class="pillar-tag">Physique</span>
+    <div class="approche-grid">
+      <div class="approche-photo">
+        <img src="photos/opt/DSC_0330-scaled.webp" alt="Séance d'ostéopathie animale" loading="lazy">
+        <div class="photo-caption">Séance d'ostéopathie — douceur et écoute</div>
       </div>
-      <div class="pillar-card">
-        <div class="pillar-icon">✨</div>
-        <h3>Soin énergétique</h3>
-        <p>Rééquilibrage des énergies, apaisement du stress et des anxiétés, soutien pendant les phases de convalescence.</p>
-        <span class="pillar-tag">Émotionnel</span>
-      </div>
-      <div class="pillar-card">
-        <div class="pillar-icon">💬</div>
-        <h3>Communication animale</h3>
-        <p>Comprendre ce que votre compagnon exprime pour une rééducation émotionnelle et une relation apaisée.</p>
-        <span class="pillar-tag">Psychique</span>
+      <div class="approche-content">
+        <div class="pillar-list">
+          <div class="pillar-item">
+            <div class="pillar-icon">🦴</div>
+            <div>
+              <h3>Ostéopathie animale</h3>
+              <p>Techniques manuelles et mobilisations douces pour traiter les troubles musculo-squelettiques, améliorer la mobilité et prévenir les blessures.</p>
+              <span class="pillar-tag">Physique</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon">✨</div>
+            <div>
+              <h3>Soin énergétique</h3>
+              <p>Rééquilibrage des énergies, apaisement du stress et des anxiétés, soutien pendant les phases de convalescence.</p>
+              <span class="pillar-tag">Émotionnel</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon">💬</div>
+            <div>
+              <h3>Communication animale</h3>
+              <p>Comprendre ce que votre compagnon exprime pour une rééducation émotionnelle et une relation apaisée.</p>
+              <span class="pillar-tag">Psychique</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <p class="fusion-note">🌿 La fusion de ces trois disciplines permet de prendre en charge l'animal dans sa globalité : <strong>physique, émotionnel et psychique</strong>.</p>
+    <div class="fusion-note">
+      <span class="fusion-icon">🌿</span>
+      <p>La fusion de ces trois disciplines permet de prendre en charge l'animal dans sa globalité : <strong>physique, émotionnel et psychique</strong>.</p>
+    </div>
   </div>
 </section>
 
@@ -100,35 +134,111 @@
 
     <div class="soins-grid">
       <div class="soin-card">
-        <h3>🦴 Ostéopathie animale</h3>
-        <ul>
-          <li>Traitement des troubles musculo-squelettiques</li>
-          <li>Amélioration de la mobilité et de la souplesse</li>
-          <li>Prévention des blessures</li>
-          <li>Suivi post-opératoire (hernies discales, etc.)</li>
-          <li>Accompagnement de l'animal âgé ou sportif</li>
-        </ul>
+        <div class="soin-photo">
+          <img src="photos/opt/DSC_0335-scaled.webp" alt="Ostéopathie canine" loading="lazy">
+        </div>
+        <div class="soin-body">
+          <h3>🦴 Ostéopathie animale</h3>
+          <ul>
+            <li>Traitement des troubles musculo-squelettiques</li>
+            <li>Amélioration de la mobilité et de la souplesse</li>
+            <li>Prévention des blessures</li>
+            <li>Suivi post-opératoire (hernies discales, etc.)</li>
+            <li>Accompagnement de l'animal âgé ou sportif</li>
+          </ul>
+        </div>
       </div>
       <div class="soin-card">
-        <h3>✨ Soin énergétique</h3>
-        <ul>
-          <li>Rééquilibrage des énergies</li>
-          <li>Apaisement du stress et des anxiétés</li>
-          <li>Soutien lors des phases de convalescence</li>
-          <li>Rééducation émotionnelle</li>
-          <li>Bien-être global au quotidien</li>
-        </ul>
+        <div class="soin-photo">
+          <img src="photos/opt/DSC_0336-scaled.webp" alt="Soin énergétique animal" loading="lazy">
+        </div>
+        <div class="soin-body">
+          <h3>✨ Soin énergétique</h3>
+          <ul>
+            <li>Rééquilibrage des énergies</li>
+            <li>Apaisement du stress et des anxiétés</li>
+            <li>Soutien lors des phases de convalescence</li>
+            <li>Rééducation émotionnelle</li>
+            <li>Bien-être global au quotidien</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="animals-strip">
-      <span>🐕 Chiens</span><span>🐈 Chats</span><span>🐴 Chevaux</span><span>🐇 NAC</span><span>🐾 Petits & grands compagnons</span>
+      <span>🐕 Chiens</span>
+      <span>🐈 Chats</span>
+      <span>🐴 Chevaux</span>
+      <span>🐇 NAC</span>
+      <span>🐾 Petits & grands compagnons</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section class="section" id="galerie">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Galerie</span>
+      <h2>En séance</h2>
+      <p>Moments de soin, d'écoute et de connexion avec vos compagnons.</p>
+    </div>
+
+    <div class="galerie-grid">
+      <div class="galerie-item galerie-featured">
+        <img src="photos/opt/DSC_0328-scaled.webp" alt="Séance d'ostéopathie" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0330-scaled.webp" alt="Soin animal" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0335-scaled.webp" alt="Ostéopathie canine" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0336-scaled.webp" alt="Soin énergétique" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0339-scaled.webp" alt="Séance bien-être" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0340-scaled.webp" alt="Thérapie animale" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0363-1-scaled.webp" alt="Soin animalier" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0366-scaled.webp" alt="Ostéopathie" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0372-1-scaled.webp" alt="Séance de soin" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0401-scaled.webp" alt="Bien-être animal" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0412-scaled.webp" alt="Soin énergétique animal" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0421-scaled.webp" alt="Thérapeute animalier" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/DSC_0427-1-scaled.webp" alt="Séance ostéopathie" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/IMG_1536-scaled.webp" alt="Soin animal" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/IMG_1537-scaled.webp" alt="Ostéopathie animale" loading="lazy">
+      </div>
+      <div class="galerie-item">
+        <img src="photos/opt/IMG_1543-scaled.webp" alt="Séance bien-être animal" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ TARIFS ============ -->
-<section class="section" id="tarifs">
+<section class="section section-alt" id="tarifs">
   <div class="container">
     <div class="section-head">
       <span class="kicker">Tarifs</span>
@@ -140,7 +250,10 @@
       <div class="price-card">
         <div class="price-icon">🦴</div>
         <h3>Ostéopathie canine</h3>
-        <div class="price"><span class="price-amount">55&nbsp;€</span><span class="price-note">la séance</span></div>
+        <div class="price">
+          <span class="price-amount">55&nbsp;€</span>
+          <span class="price-note">la séance</span>
+        </div>
         <ul class="price-features">
           <li>✓ Bilan complet de votre compagnon</li>
           <li>✓ Techniques manuelles douces</li>
@@ -152,7 +265,10 @@
       <div class="price-card">
         <div class="price-icon">✨</div>
         <h3>Soin énergétique</h3>
-        <div class="price"><span class="price-amount">60&nbsp;€</span><span class="price-note">la séance</span></div>
+        <div class="price">
+          <span class="price-amount">60&nbsp;€</span>
+          <span class="price-note">la séance</span>
+        </div>
         <ul class="price-features">
           <li>✓ Rééquilibrage des énergies</li>
           <li>✓ Apaisement stress & anxiété</li>
@@ -165,7 +281,10 @@
         <div class="ribbon">Le plus complet</div>
         <div class="price-icon">🌟</div>
         <h3>Formule Ostéo'Nergie</h3>
-        <div class="price"><span class="price-amount">100&nbsp;€</span><span class="price-note">la séance</span></div>
+        <div class="price">
+          <span class="price-amount">100&nbsp;€</span>
+          <span class="price-note">la séance</span>
+        </div>
         <ul class="price-features">
           <li>✓ Ostéopathie + soin énergétique</li>
           <li>✓ Prise en charge globale</li>
@@ -175,12 +294,15 @@
       </div>
     </div>
 
-    <p class="order-note">🐾 <strong>Membre du Champ des Chiens ?</strong> −10&nbsp;€ sur ta prestation au terrain (déplacement offert, week-end uniquement) · −5&nbsp;€ sur la prestation à domicile (frais de déplacement non inclus).</p>
+    <div class="order-note">
+      <span class="note-icon">🐾</span>
+      <p><strong>Membre du Champ des Chiens ?</strong> −10&nbsp;€ sur ta prestation au terrain (déplacement offert, week-end uniquement) · −5&nbsp;€ sur la prestation à domicile (frais de déplacement non inclus).</p>
+    </div>
   </div>
 </section>
 
 <!-- ============ AVIS ============ -->
-<section class="section section-alt" id="avis">
+<section class="section" id="avis">
   <div class="container">
     <div class="section-head">
       <span class="kicker">Ils témoignent</span>
@@ -208,7 +330,7 @@
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section class="section" id="contact">
+<section class="section section-alt" id="contact">
   <div class="container">
     <div class="section-head">
       <span class="kicker">Contact</span>
@@ -218,33 +340,42 @@
 
     <div class="contact-grid">
       <div class="contact-card">
-        <h3>📞 Téléphone</h3>
+        <div class="contact-icon">📞</div>
+        <h3>Téléphone</h3>
         <p><a href="tel:+33605240998" class="contact-link">06 05 24 09 98</a></p>
         <p class="muted">Appel ou SMS pour réserver votre séance.</p>
       </div>
       <div class="contact-card">
-        <h3>📍 Adresse</h3>
+        <div class="contact-icon">📍</div>
+        <h3>Adresse</h3>
         <p>319 Chemin de l'Onde<br>84140 Avignon (Montfavet)</p>
         <p class="muted">Entrée accessible PMR · Déplacements à domicile possibles.</p>
       </div>
       <div class="contact-card">
-        <h3>🕐 Horaires</h3>
+        <div class="contact-icon">🕐</div>
+        <h3>Horaires</h3>
         <p>Lundi – Samedi<br>9h00 – 19h00</p>
         <p class="muted">Fermé le dimanche.</p>
       </div>
       <div class="contact-card">
-        <h3>📱 Réseaux</h3>
+        <div class="contact-icon">📱</div>
+        <h3>Réseaux</h3>
         <p>
-          <a href="https://www.facebook.com/search/top?q=Typhaine%20Leleu%20-%20Th%C3%A9rapeute%20Animalier" target="_blank" rel="noopener" class="contact-link">Facebook — Typhaine Leleu, Thérapeute Animalier</a><br>
-          <a href="https://www.instagram.com/typhaine.therapeute_animalier" target="_blank" rel="noopener" class="contact-link">Instagram — @typhaine.therapeute_animalier</a>
+          <a href="https://www.facebook.com/search/top?q=Typhaine%20Leleu%20-%20Th%C3%A9rapeute%20Animalier" target="_blank" rel="noopener" class="contact-link">Facebook</a><br>
+          <a href="https://www.instagram.com/typhaine.therapeute_animalier" target="_blank" rel="noopener" class="contact-link">Instagram</a>
         </p>
       </div>
     </div>
 
     <div class="cta-banner">
-      <h2>Votre compagnon mérite le meilleur.</h2>
-      <p>Ostéopathie, soin énergétique ou formule complète — parlons de ses besoins.</p>
-      <a href="tel:+33605240998" class="btn btn-light btn-lg">📞 Appeler maintenant</a>
+      <div class="cta-content">
+        <h2>Votre compagnon mérite le meilleur.</h2>
+        <p>Ostéopathie, soin énergétique ou formule complète — parlons de ses besoins.</p>
+        <a href="tel:+33605240998" class="btn btn-light btn-lg">📞 Appeler maintenant</a>
+      </div>
+      <div class="cta-photo">
+        <img src="photos/opt/DSC_0406-scaled-e1781245780632.webp" alt="Typhaine Leleu avec un animal" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
@@ -252,7 +383,10 @@
 <footer class="footer">
   <div class="container footer-inner">
     <div>
-      <span class="logo">🐾 Ostéo'Nergie Animale</span>
+      <span class="logo">
+        <span class="logo-icon">🐾</span>
+        <span class="logo-text">Ostéo'Nergie <em>Animale</em></span>
+      </span>
       <p class="muted">Typhaine Leleu — Thérapeute Animalier · Ostéopathie & soins énergétiques animaliers</p>
     </div>
     <p class="muted">319 Chemin de l'Onde, 84140 Avignon · 06 05 24 09 98<br>© 2026 — Tous droits réservés</p>
