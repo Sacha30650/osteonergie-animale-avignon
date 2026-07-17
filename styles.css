@@ -417,16 +417,45 @@ em { font-style: italic; color: var(--accent); }
   .nav-links a { padding: 16px 32px; border-top: 1px solid var(--card-border); }
   .nav-links a::after { display: none; }
   .burger { display: block; }
-  .hero { padding-top: 100px; }
-  .hero-proof { gap: 32px; }
+  .hero { padding-top: 100px; min-height: auto; }
+  .hero-proof { gap: 24px; }
   .galerie-grid { grid-template-columns: repeat(2, 1fr); }
   .galerie-featured { grid-column: span 2; grid-row: span 1; }
 }
 @media (max-width: 560px) {
   .container { padding: 0 20px; }
   .contact-grid { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 36px; }
+  .hero h1 { font-size: 32px; letter-spacing: -0.5px; }
+  .hero { padding-top: 90px; padding-bottom: 60px; }
+  .hero-bg-img { object-position: center 30%; }
+  .lead { font-size: 17px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { text-align: center; justify-content: center; }
+  .hero-proof { gap: 20px; }
+  .proof-item strong { font-size: 26px; }
   .section { padding: 64px 0; }
-  .galerie-grid { grid-template-columns: 1fr; }
+  .section-head { margin-bottom: 40px; }
+  .section-head h2 { font-size: 28px; }
+  .galerie-grid { grid-template-columns: 1fr; gap: 12px; }
   .galerie-featured { grid-column: span 1; }
+  .galerie-item { aspect-ratio: 16/10; }
+  .nav-inner { height: 70px; }
+  .nav-cta .btn-sm { padding: 8px 14px; font-size: 13px; }
+  .nav-cta .btn-icon { display: none; }
+  .nav-phone-text { display: none; }
+  .nav-cta .btn-sm::after { content: '📞 Appeler'; }
+  .logo { font-size: 18px; }
+  .logo-icon { font-size: 20px; }
+  .badge { font-size: 12px; padding: 8px 14px; }
+  .btn-lg { padding: 14px 24px; font-size: 15px; }
+  .approche-photo { margin-bottom: 24px; }
+  .pillar-item { flex-direction: column; gap: 12px; }
+  .pillar-icon { width: 56px; height: 56px; font-size: 28px; }
+  .soin-photo { height: 200px; }
+  .price-card { padding: 32px 24px; }
+  .price-amount { font-size: 42px; }
+  .cta-banner { padding: 40px 24px; }
+  .cta-content h2 { font-size: 26px; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .hero-scroll { display: none; }
 }
